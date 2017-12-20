@@ -1,0 +1,34 @@
+Name:     Abhijeet Kulkarni
+B Number: B00659279
+------------------------------------------------------------------------------
+Programming Language Used: Java
+------------------------------------------------------------------------------
+Description:
+Every branch in the bank system has a receiver thread and sender; so does the 
+controller. Controller will send INITBRANCH message to all branches. All 
+branches will setup TCP connection between each other using INTRO message.
+Sender thread of branch will start trasfering money to other branches and 
+receiver thread will receive money. Controller will send INITSNAPSHOT message
+to any of the branch which will initial snapshot. All branches after 
+completing snapshot will return snapshot to controller using RETURNSNAPSHOT 
+message.
+------------------------------------------------------------------------------
+Assuming you are in the directory containing this README:
+
+## To clean:
+make clean
+------------------------------------------------------------------------------
+## To compile:
+make
+------------------------------------------------------------------------------
+## To run:
+./branch [BRANCH_NAME] [PORT]
+
+./controller [BANK_AMOUNT] [BRANCH_INFO_FILE]
+------------------------------------------------------------------------------
+## Sample Output
+snapshot_id: 1
+branch1: 760 branch1->branch2: 0 branch1->branch3: 0
+branch2: 1170 branch2->branch1: 0 branch2->branch3: 10
+branch3: 1060 branch3->branch1: 0 branch3->branch2: 0
+------------------------------------------------------------------------------

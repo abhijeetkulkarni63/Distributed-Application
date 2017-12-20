@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+message IntroMessage {
+  string from_branch = 1;
+}

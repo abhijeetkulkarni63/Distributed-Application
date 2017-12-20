@@ -1,0 +1,19 @@
+Name:     Abhijeet Kulkarni
+B Number: B00659279
+
+Programming Language Used: Java
+
+Assuming you are in the directory containing this README:
+
+## To clean:
+make clean
+-------------------------------------------------------------------------------
+## To compile:
+make
+------------------------------------------------------------------------------
+## To run:
+chmod +x ./server.sh
+./server.sh [PORT]
+
+chmod +x ./client.sh
+./client.sh [IP] [PORT]
