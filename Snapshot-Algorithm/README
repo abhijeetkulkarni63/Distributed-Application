@@ -1,5 +1,4 @@
 Name:     Abhijeet Kulkarni
-B Number: B00659279
 ------------------------------------------------------------------------------
 Programming Language Used: Java
 ------------------------------------------------------------------------------
@@ -12,6 +11,9 @@ receiver thread will receive money. Controller will send INITSNAPSHOT message
 to any of the branch which will initial snapshot. All branches after 
 completing snapshot will return snapshot to controller using RETURNSNAPSHOT 
 message.
+
+Used Google Protocol Buffer for marshalling and unmarshalling data to and from
+nodes in the system.
 ------------------------------------------------------------------------------
 Assuming you are in the directory containing this README:
 
